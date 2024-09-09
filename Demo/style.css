@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* extra small - default styles for screens smaller than 768px */
+@media (min-width: 375px) and (max-width: 767.98px) {
+  .container {
+    width: 100%; /* Take full width with padding for extra small screens */
+  }
+}
+
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* mediam */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 0px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 60px;
+  background-color: white;
+  width: 100%;
+}
+header h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.bars {
+  display: none;
+}
+
+@media (min-width: 400px) and  (max-width: 1080px) {
+    .bars {
+        display: flex;
+      }  
+
+      .links{
+        display: none;
+      }
+}
+
+.landing {
+  background: url("./slider-bg.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 4rem;
+  /* transform: translate(-100%,-50%); */
+}
+
+/*? ABOUT INDEX */
+
+.about-us {
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  padding: 80px;
+}
+.title-of-about {
+  margin-bottom: 30px;
+}
+
+.about-text {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+/*? ABOUT INDEX */
+
+footer {
+  background-color: #222;
+  color: white;
+}
+
+.social-links {
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px 10px;
+}
